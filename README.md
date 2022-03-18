@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [ Solution](https://github.com/rebekahshaw92//sunnyside-agency-landing-page)
-- Live Site URL: [Live Site](https://rebekahshaw92.github.io//sunnyside-agency-landing-page)
+- Live Site URL: [Live Site](https://rebekahshaw92.github.io/sunnyside-agency-landing-page/)
 
 ### Built with
 
