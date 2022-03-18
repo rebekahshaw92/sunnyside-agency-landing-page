@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.standout-imgMobile {
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.standout-imgDesktop {
+display: none;
+@include media-breakpoint-up(lg) {
+  display: flex;
+  width: 100%;
+}
+}
+
+
+  .transform, .standOut {
+    height: 960px;
+    @include media-breakpoint-up(sm){
+      height: 1200px;
+    }
+    @include media-breakpoint-up(lg){
+      height: 400px;
+    }
+    @include media-breakpoint-up(xl){
+      height: 480px;
+    }
+    @include media-breakpoint-up(xxl){
+      height: 580px;
+    }
+  }
+
+  .transformDesktop {
+    display: none;
+    @include media-breakpoint-up(lg){
+      display: flex;
+    }
+  }
+
+  .transformMobile {
+    @include media-breakpoint-up(lg){
+      display: none;
+    }
+  }
+
+  .transform-img {
+    width: 100%;
+  }
+
+.graphicDesign {
+  background-image: url('../images/mobile/image-graphic-design.jpg');
+  background-size: 100% 820px;
+  background-repeat: no-repeat;
+  height: 820px;
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+    background-size: 100% 650px;
+    height: 650px;
+  }
+  @include media-breakpoint-up(xl){
+    background-size: 100% 600px;
+    height: 600px;
+  }
+}
+
+
+.photography {
+  background-image: url('../images/mobile/image-photography.jpg');
+  background-size: 100% 800px;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    background-image: url('../images/desktop/image-photography.jpg');
+    background-size: 100% 650px;
+    height: 650px;
+  }
+  @include media-breakpoint-up(xl){
+    background-size: 100% 600px;
+    height: 600px;
+  }
+}
+
+.testionials {
+  height: 1450px;
+  @include media-breakpoint-up(lg){
+    height: 600px;
+  }
+}
+
+.emilyImg {
+ border-radius: 50%;
+ width: 90px;
+ height: 90px;
+ margin: 60px;
+ @include media-breakpoint-up(lg){
+   width:  70px;
+   height: 70px;
+ }
+}
+
+.mainImages {
+  width: 100%;
+}
+
+.mobile {
+  @include media-breakpoint-up(lg) {
+    display: none !important;
+  }
+}
+
+.desktop {
+  display: none !important;
+  @include media-breakpoint-up(lg){
+    display: flex !important;
+  }
+}

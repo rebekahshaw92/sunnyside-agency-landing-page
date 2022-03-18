@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+$headerFont: 'Barlow', sans-serif;
+$mainFont: 'Fraunces', serif;
+$white: hsl(0, 0%, 100%);
+$grayishBlue: hsl(210, 4%, 67%);
+$darkGrayishBlue: hsl(232, 10%, 55%);
+$yellow: hsl(51, 100%, 49%);
+$darkBlue: hsl(198, 62%, 26%);
+$darkDesaturatedCyan: hsl(167, 40%, 24%);
+$veryDarkGrayishBlue: hsl(213, 9%, 39%);
+$veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$softRed: hsl(7, 99%, 70%);
+$darkModerateCyan: hsl(168, 34%, 41%);
+
+.navbar-collapse.shown {
+li {
+    margin-right: 20px;
+    &:first-child {
+        margin-top: 60px;
+    }
+    &:last-child {
+        background-color: $yellow;
+        border-radius: 50px;
+        padding: 10px 30px 10px;
+        a {
+            color: $veryDarkDesaturatedBlue;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family: $mainFont;
+        }
+      }
+
+
+a {
+    font-family: $headerFont;
+    text-decoration: none;
+    color: $grayishBlue;
+    font-weight: 900;
+    padding-top: 20px;
+   // padding-left: 40%;
+    //width: 50%;
+    font-size: 1.5rem;
+}
+}
+}
+
+.navbar-collapse {
+    li {
+    @include media-breakpoint-up(lg){
+        &:last-child { 
+            background-color: $white;
+            border-radius: 50px;
+            padding: 10px 30px 10px;
+            a {
+                color: $veryDarkDesaturatedBlue;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-family: $mainFont;
+
+            }
+            &:hover {
+                background-color: #6fd0fa;
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }   
+    a {
+        @include media-breakpoint-up(lg){
+            font-family: $headerFont;
+            color: $white;
+            text-decoration: none;
+            vertical-align:top;
+        }
+    }
+    }
+}
+
+
+.title {
+    font-family: $mainFont;
+    margin-top: 20%;
+    font-weight: 700;
+    font-size: 55px;
+    letter-spacing: 7px;
+    color: $white;
+    @include media-breakpoint-up(lg){
+        font-family: 30px;
+        margin-top: 10%;
+    }
+    @include media-breakpoint-up(xl){
+        margin-top: 7%;
+        font-family: 30px;
+    }
+}
+
+.transformTitle {
+    font-family: $mainFont;
+    font-weight: 900;
+    margin-top: 17%;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 38px;
+}
+
+.transformText {
+    font-family: $headerFont;
+    font-size: 23px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 23px;
+    line-height: 1.5;
+    color: $darkGrayishBlue;
+    font-weight: 700;
+    @include media-breakpoint-up(lg){
+        font-size: 18px;
+    }
+}
+
+
+.transform, .standOut {
+ a {
+        position: relative;
+        text-decoration: none;
+        font-family: $mainFont;
+        display: block;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        font-size: 20px;
+        font-weight: 900;
+        color: $veryDarkDesaturatedBlue;
+        margin: 0 auto;
+        margin-top: 1rem;
+      @include media-breakpoint-up(lg){
+          padding-left: 40px;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         opacity: 0.5 !important;
+         height: 8px;
+         width: 33%;
+         margin: 0 auto;
+         left: 0;
+         right: 0;
+         top: 65%;
+         @include media-breakpoint-up(sm){
+             width: 20%;
+         }
+
+         @include media-breakpoint-up(lg){
+            right: 52%;
+            width: 30%;
+         }
+         @include media-breakpoint-up(xl){
+            width: 25%;
+            right: 68%;
+            padding-left: 40px;
+         }
+      }
+    }
+}
+
+.graphicTitle, .photographyTitle {
+    font-family: $mainFont;
+    color: $darkDesaturatedCyan;
+    padding-top: 545px;
+    font-weight: 900;
+    font-size: 30px;
+    @include media-breakpoint-up(lg){
+        padding-top: 400px;
+    }
+}
+
+.transform a::after {
+    background-color: $yellow;
+}
+
+
+.standOut a::after {
+    background-color: $softRed;
+}
+
+.graphicText, .photographyText {
+    font-family: $headerFont;
+    color: $darkDesaturatedCyan;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    @include media-breakpoint-up(xl){
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+.testionialsTitle {
+    font-family: $mainFont;
+    color: $grayishBlue;
+    font-size: 18px;
+    letter-spacing: 7px;
+    margin-top: 15%;
+    font-weight: 900;
+    @include media-breakpoint-up(lg){
+        margin-top: 10%;
+    }
+}
+
+.emilyText {
+    font-family: $mainFont;
+    color: $darkGrayishBlue;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 2;
+    @include media-breakpoint-up(lg){
+        font-size: 18px;
+    }
+}
+
+.emilySubtitle {
+    font-family: $mainFont;
+    font-weight: 900;
+    font-size: 22px;
+    @include media-breakpoint-up(lg){
+        font-size: 20px;
+        margin-top: 10%;
+    }
+}
+
+.emilySubtitleText {
+    font-family: $headerFont;
+    color: $darkGrayishBlue;
+    margin-top: -10px;
+    @include media-breakpoint-up(lg){
+        font-size: 18px;
+    }
+}
+
+.footerMenu li {
+    a { 
+    font-family: $headerFont;
+    color: $darkModerateCyan;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: 20%;
+    font-size: 24px !important;
+    @include media-breakpoint-up(lg){
+        margin-top: 10% !important;
+        font-size: 20px;
+    }
+    }
+}

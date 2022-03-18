@@ -1,0 +1,57 @@
+$darkDesaturatedCyan: hsl(167, 40%, 24%);
+
+.footer {
+    background-color: #8ed0c4;
+    height: 400px;
+    @include media-breakpoint-up(sm){
+        height: 450px;
+    }
+    @include media-breakpoint-up(lg){
+        height: 400px;
+    }
+    @include media-breakpoint-up(xl){
+        height: 450px;
+    }
+}
+
+.greenLogo {
+    padding-top: 20%;
+    padding-bottom: 8%;
+    width: 40%;
+    filter: invert(29%) sepia(42%) saturate(435%) hue-rotate(116deg) brightness(53%) contrast(98%);
+    @include media-breakpoint-up(sm){
+        padding-top: 10%;
+    }
+    @include media-breakpoint-up(lg){
+        width: 15%;
+        padding-bottom: 3%;
+    }
+}
+
+.footerMenu li {
+  list-style: none;
+  display: inline;
+}
+
+.social {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    @include media-breakpoint-up(sm){
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    @include media-breakpoint-up(lg){
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding-top: 20px;
+    a { 
+        color: hsl(228, 45%, 44%);
+     } 
+}
+ 
